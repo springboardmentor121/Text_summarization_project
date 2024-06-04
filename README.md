@@ -15,12 +15,12 @@ Format: Typically provided in JSON or CSV format, with fields for the article te
 #3. Project Design
 3.1 Data Processing
 Data processing involves several steps to prepare the raw text data for modeling:
-
 Text Cleaning: Remove unnecessary characters, punctuations, and stopwords.
 Tokenization: Split the text into sentences and words.
 Normalization: Convert all text to lowercase and handle contractions.
 POS Tagging: Part-of-speech tagging to identify the grammatical components of the text.
 Lemmatization/Stemming: Reduce words to their base or root form.
+
 3.2 Model Selection
 We will explore two main types of summarization models:
 Extractive Summarization: Selects key sentences from the original text to form a summary.
