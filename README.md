@@ -42,9 +42,9 @@ The dataset utilized for this project is the "CNN/DailyMail" dataset, hosted by 
 ##### Reporting: Prepare a comprehensive report summarizing the project, including the methodology, results, and potential improvements.
 
 # Tools and Technologies
-##### Programming Languages: Python
-##### Libraries: TensorFlow, PyTorch, Hugging Face Transformers, NLTK, SpaCy
-##### Development Environment: Jupyter Notebook, Google Colab
-##### Version Control: Git/GitHub
+#### Programming Languages: Python
+#### Libraries: TensorFlow, PyTorch, Hugging Face Transformers, NLTK, SpaCy
+#### Development Environment: Jupyter Notebook, Google Colab
+#### Version Control: Git/GitHub
 
 By following this structured approach, we can develop an effective text summarization system using NLP techniques. The project will encompass various stages from data processing to deployment, ensuring a comprehensive solution to automatic text summarization.
