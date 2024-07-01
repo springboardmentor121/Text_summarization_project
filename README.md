@@ -1,5 +1,6 @@
 # 🌟 Text Summarization using NLP 🌟
-## Group 3: V. Srujana
+## Group 3: V.Srujana, Anurag DVS, Prabhjot Singh, Preeti Panjwani, Rupesh Sharda, Shreepad Raut 
+
 ## 📚 Project Overview 📚
 This project focuses on the development of an automatic text summarization system using Natural Language Processing (NLP) techniques. The goal is to create a system that can efficiently transform lengthy documents into shorter, coherent versions while retaining essential points and key information. This is particularly useful in reducing reading time, facilitating research, enhancing indexing, reducing bias, providing personalized information, and improving scalability in processing large volumes of text.
 
