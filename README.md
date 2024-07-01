@@ -1,50 +1,51 @@
-# Text_summarization_project
-Project Overview: Text Summarization Using the CNN/DailyMail Dataset
+# 🌟 Text Summarization using NLP 🌟
+## Group 3: V. Srujana
+## 📚 Project Overview 📚
+This project focuses on the development of an automatic text summarization system using Natural Language Processing (NLP) techniques. The goal is to create a system that can efficiently transform lengthy documents into shorter, coherent versions while retaining essential points and key information. This is particularly useful in reducing reading time, facilitating research, enhancing indexing, reducing bias, providing personalized information, and improving scalability in processing large volumes of text.
 
-# Objective
-The objective of this project is to develop an advanced text summarization system using the CNN/DailyMail dataset. The goal is to create a model capable of generating concise and coherent summaries of lengthy news articles, thus facilitating quicker information consumption.
+## 🔍 Why Automatic Text Summarization? 🔍
+#### Reduces Reading Time: Provides quick insights into lengthy documents.
+#### Facilitates Research: Helps in swiftly selecting relevant documents.
+#### Enhances Indexing: Improves indexing systems' efficiency and accuracy.
+#### Less Biased: Consistent and less biased than human summarization.
+#### Personalized Information: Useful in personalized question-answering systems.
+#### Scalability: Allows processing more documents efficiently for commercial abstract services.
 
-# Dataset Description
-The dataset utilized for this project is the "CNN/DailyMail" dataset, hosted by Abstractive Summarization with TensorFlow. This dataset comprises a substantial collection of news articles and their corresponding multi-sentence summaries from CNN and the Daily Mail. Key characteristics of the dataset include:
+## 📂 Dataset Description 📂
+For this project, various datasets can be used, including:
+#### News articles
+#### Research papers
+#### Wikipedia articles
+#### Legal documents
+#### Any large corpus of text documents
+The chosen dataset should contain long-form texts suitable for summarization tasks. Each document in the dataset will be preprocessed and summarized using the steps outlined in the project.
 
-#### Size: Approximately 300,000 articles.
-#### Structure: Each entry contains a news article and its corresponding summary.
-#### Content: The articles cover a wide range of topics including politics, entertainment, sports, and technology.
-#### Usage: Widely used in research for training and evaluating text summarization models.
+## 🛠️ Project Design 🛠️
+The project is designed to follow a series of steps to achieve effective text summarization:
+#### Text Cleaning: Removal of unnecessary characters, symbols, and stop words.
+#### Sentence Tokenization: Splitting the text into individual sentences.
+#### Word Tokenization: Breaking sentences into individual words.
+#### Word-Frequency Table: Creating a table to track the frequency of each word.
+#### Summarization: Selecting sentences with the highest scores based on word frequency to form the summary.
 
-# Project Design
-## 1. Data Preprocessing
-##### Loading Data: Import the dataset into the working environment.
-##### Cleaning Text: Perform text cleaning to remove unnecessary characters, stop words, and punctuation.
-##### Tokenization: Convert text into tokens to facilitate model training.
-##### Vocabulary Creation: Build a vocabulary from the tokenized text for both articles and summaries.
+## 🧰 Tools and Technologies 🧰
+#### Programming Language: Python
+#### Libraries:
+#### SpaCy: For NLP processing.
+#### STOP_WORDS: From SpaCy for stop word removal.
+#### string: For handling punctuation.
+#### heapq: For selecting the top sentences based on scores.
+#### SpaCy Language Model: 'en_core_web_sm' for English language processing.
 
-## 2. Model Selection
-##### Baseline Models: Implement and evaluate baseline models like Seq2Seq with attention mechanisms.
-##### Advanced Models: Implement state-of-the-art models like Transformer-based models (e.g., BERT, GPT-3) for improved performance.
+## Implementation Procedure
+#### 1.Install SpaCy and Download Language Model
+#### 2.Import Necessary Libraries
+#### 3.Load SpaCy Model
+#### 4.Define the Text to Summarize
+#### 5.Tokenize Text and Remove Stop Words and Punctuation
+#### 6.Create Word-Frequency Table
+#### 7.Normalize Frequencies
+#### 8.Score Sentences
+#### 9.Generate Summary
 
-## 3. Model Training
-##### Training Configuration: Set up the training environment including batch size, learning rate, and optimization algorithms.
-##### Data Splitting: Divide the dataset into training, validation, and test sets.
-##### Training: Train the model using the training set, and validate its performance using the validation set.
-
-## 4. Evaluation
-##### Evaluation Metrics: Utilize metrics such as ROUGE (Recall-Oriented Understudy for Gisting Evaluation) scores to assess the quality of generated summaries.
-##### Performance Analysis: Compare the performance of different models and select the best-performing model based on evaluation metrics.
-
-## 5. Deployment
-##### Model Saving: Save the trained model and its parameters for deployment.
-##### API Development: Develop an API to expose the summarization functionality for real-world applications.
-##### User Interface: Design a user-friendly interface where users can input articles and receive summaries.
-
-## 6. Documentation and Reporting
-##### Documentation: Document the entire process including data preprocessing steps, model architecture, training procedures, and evaluation metrics.
-##### Reporting: Prepare a comprehensive report summarizing the project, including the methodology, results, and potential improvements.
-
-# Tools and Technologies
-#### Programming Languages: Python
-#### Libraries: TensorFlow, PyTorch, Hugging Face Transformers, NLTK, SpaCy
-#### Development Environment: Jupyter Notebook, Google Colab
-#### Version Control: Git/GitHub
-
-By following this structured approach, we can develop an effective text summarization system using NLP techniques. The project will encompass various stages from data processing to deployment, ensuring a comprehensive solution to automatic text summarization.
+By following these steps, the project aims to create concise summaries of any lengthy text, thereby making text processing more efficient and effective. The implementation showcases the power of NLP in automating the summarization process and highlights its potential applications in various domains.
