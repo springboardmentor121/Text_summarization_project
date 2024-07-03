@@ -38,32 +38,39 @@ This project utilizes the T5 model, a state-of-the-art transformer-based archite
 #### 7. Re-evaluation 🔍:
 
    • Re-evaluate the model using the ROUGE metric to gauge enhanced performance post-augmentation.
-Results
+
+### Results
 
 📊 Comprehensive evaluation results demonstrate the T5 model's proficiency in summarizing text across various metrics. Explore the notebook to understand the intricacies of text summarization and harness the power of the T5 model!
 
-Extractive Summarization with spaCy
+## Extractive Summarization with spaCy
 This project uses spaCy, a robust NLP library, to extract meaningful summaries by identifying and selecting the most important sentences from the original text.
 
-Key Steps
-Dependency Installation 🔧:
+### Key Steps
+#### 1. Dependency Installation 🔧:
 
-Install necessary libraries, including spaCy and tabulate.
-Download the English language model for spaCy.
-Text Processing 🔄:
+   • Install necessary libraries, including spaCy and tabulate.
+   • Download the English language model for spaCy.
 
-Define and process the text to be summarized.
-Tokenize the text and calculate word frequencies.
-Sentence Scoring 📊:
+#### 2. Text Processing 🔄:
 
-Score each sentence based on the frequencies of the words it contains.
-Summary Generation ✍️:
+   • Define and process the text to be summarized.
+   • Tokenize the text and calculate word frequencies.
 
-Generate the extractive summary by selecting the top sentences.
-Result Formatting 🗂️:
+#### 3. Sentence Scoring 📊:
+
+   • Score each sentence based on the frequencies of the words it contains.
+
+#### 4. Summary Generation ✍️:
+
+   • Generate the extractive summary by selecting the top sentences.
+
+#### 5. Result Formatting 🗂️:
 
 Format the summary and original text into a structured table using the tabulate library.
-Results
+
+### Results
+
 📊 The project generates extractive summaries that capture the essence of the original text. The results are displayed in a structured table format for clarity. The summary model is saved as a pkl file for easy integration into web applications.
 
 
