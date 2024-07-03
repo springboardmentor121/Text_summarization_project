@@ -6,14 +6,16 @@
 This project utilizes the T5 model, a state-of-the-art transformer-based architecture, to create summaries that may include rephrasing and new phrases not present in the original text.
 
 ### Key Steps
-#### 1.Data Preparation 📦:
+#### 1. Data Preparation 📦:
 
-Import necessary libraries.
-Load the Samsum dataset, a benchmark for text summarization tasks.
-Preprocessing 🔄:
+   • Import necessary libraries.
+   • Load the Samsum dataset, a benchmark for text summarization tasks.
+   
+#### 2. Preprocessing 🔄:
 
-Tokenize the input articles and summaries to prepare them for the T5 model.
-Model Loading 🚀:
+    • Tokenize the input articles and summaries to prepare them for the T5 model.
+    
+#### 3. Model Loading 🚀:
 
 Load the pre-trained T5 model for conditional generation.
 Summarization Function ✍️:
