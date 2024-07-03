@@ -13,27 +13,33 @@ This project utilizes the T5 model, a state-of-the-art transformer-based archite
    
 #### 2. Preprocessing 🔄:
 
-    • Tokenize the input articles and summaries to prepare them for the T5 model.
+   • Tokenize the input articles and summaries to prepare them for the T5 model.
     
 #### 3. Model Loading 🚀:
 
-Load the pre-trained T5 model for conditional generation.
-Summarization Function ✍️:
+   • Load the pre-trained T5 model for conditional generation.
 
-Define a function that generates a concise summary using the T5 model.
-Summarization Testing 🧪:
+#### 4. Summarization Function ✍️:
 
-Test the summarization function on sample articles and compare the generated summaries with the originals.
-Evaluation 📈:
+   • Define a function that generates a concise summary using the T5 model.
 
-Use the ROUGE metric to evaluate the quality of generated summaries.
-Fine-Tuning 🔧:
+#### 5. Summarization Testing 🧪:
 
-Provide an option to fine-tune the model using the Trainer class for customization to specific tasks or datasets.
-Re-evaluation 🔍:
+   • Test the summarization function on sample articles and compare the generated summaries with the originals.
 
-Re-evaluate the model using the ROUGE metric to gauge enhanced performance post-augmentation.
+#### 5. Evaluation 📈:
+
+   • Use the ROUGE metric to evaluate the quality of generated summaries.
+
+#### 6. Fine-Tuning 🔧:
+
+   • Provide an option to fine-tune the model using the Trainer class for customization to specific tasks or datasets.
+
+#### 7. Re-evaluation 🔍:
+
+   • Re-evaluate the model using the ROUGE metric to gauge enhanced performance post-augmentation.
 Results
+
 📊 Comprehensive evaluation results demonstrate the T5 model's proficiency in summarizing text across various metrics. Explore the notebook to understand the intricacies of text summarization and harness the power of the T5 model!
 
 Extractive Summarization with spaCy
