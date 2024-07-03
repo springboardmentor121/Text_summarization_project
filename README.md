@@ -2,11 +2,11 @@
 
 ## Group-3 Project Collaborators : V. Srujana, Anurag DVS, Prabhjot Singh, Preeti Panjwani, Rupesh Sharda, Shreepad Raut 
 
-Abstractive Summarization with T5 Model
+## Abstractive Summarization with T5 Model
 This project utilizes the T5 model, a state-of-the-art transformer-based architecture, to create summaries that may include rephrasing and new phrases not present in the original text.
 
-Key Steps
-Data Preparation 📦:
+### Key Steps
+#### 1.Data Preparation 📦:
 
 Import necessary libraries.
 Load the Samsum dataset, a benchmark for text summarization tasks.
