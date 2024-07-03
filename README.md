@@ -2,52 +2,60 @@
 
 ## Group-3 Project Collaborators : V. Srujana, Anurag DVS, Prabhjot Singh, Preeti Panjwani, Rupesh Sharda, Shreepad Raut 
 
-## 📚 Project Overview 📚
-This project focuses on the development of an automatic text summarization system using Natural Language Processing (NLP) techniques. The goal is to create a system that can efficiently transform lengthy documents into shorter, coherent versions while retaining essential points and key information. This is particularly useful in reducing reading time, facilitating research, enhancing indexing, reducing bias, providing personalized information, and improving scalability in processing large volumes of text.
+Abstractive Summarization with T5 Model
+This project utilizes the T5 model, a state-of-the-art transformer-based architecture, to create summaries that may include rephrasing and new phrases not present in the original text.
 
-## 🔍 Why Automatic Text Summarization? 🔍
-#### Reduces Reading Time: Provides quick insights into lengthy documents.
-#### Facilitates Research: Helps in swiftly selecting relevant documents.
-#### Enhances Indexing: Improves indexing systems' efficiency and accuracy.
-#### Less Biased: Consistent and less biased than human summarization.
-#### Personalized Information: Useful in personalized question-answering systems.
-#### Scalability: Allows processing more documents efficiently for commercial abstract services.
+Key Steps
+Data Preparation 📦:
 
-## 📂 Dataset Description 📂
-For this project, various datasets can be used, including:
-#### News articles
-#### Research papers
-#### Wikipedia articles
-#### Legal documents
-#### Any large corpus of text documents
-The chosen dataset should contain long-form texts suitable for summarization tasks. Each document in the dataset will be preprocessed and summarized using the steps outlined in the project.
+Import necessary libraries.
+Load the Samsum dataset, a benchmark for text summarization tasks.
+Preprocessing 🔄:
 
-## 🛠️ Project Design 🛠️
-The project is designed to follow a series of steps to achieve effective text summarization:
-#### Text Cleaning: Removal of unnecessary characters, symbols, and stop words.
-#### Sentence Tokenization: Splitting the text into individual sentences.
-#### Word Tokenization: Breaking sentences into individual words.
-#### Word-Frequency Table: Creating a table to track the frequency of each word.
-#### Summarization: Selecting sentences with the highest scores based on word frequency to form the summary.
+Tokenize the input articles and summaries to prepare them for the T5 model.
+Model Loading 🚀:
 
-## 🧰 Tools and Technologies 🧰
-#### Programming Language: Python
-#### Libraries:
-#### SpaCy: For NLP processing.
-#### STOP_WORDS: From SpaCy for stop word removal.
-#### string: For handling punctuation.
-#### heapq: For selecting the top sentences based on scores.
-#### SpaCy Language Model: 'en_core_web_sm' for English language processing.
+Load the pre-trained T5 model for conditional generation.
+Summarization Function ✍️:
 
-## Implementation Procedure
-#### 1.Install SpaCy and Download Language Model
-#### 2.Import Necessary Libraries
-#### 3.Load SpaCy Model
-#### 4.Define the Text to Summarize
-#### 5.Tokenize Text and Remove Stop Words and Punctuation
-#### 6.Create Word-Frequency Table
-#### 7.Normalize Frequencies
-#### 8.Score Sentences
-#### 9.Generate Summary
+Define a function that generates a concise summary using the T5 model.
+Summarization Testing 🧪:
 
-By following these steps, the project aims to create concise summaries of any lengthy text, thereby making text processing more efficient and effective. The implementation showcases the power of NLP in automating the summarization process and highlights its potential applications in various domains.
+Test the summarization function on sample articles and compare the generated summaries with the originals.
+Evaluation 📈:
+
+Use the ROUGE metric to evaluate the quality of generated summaries.
+Fine-Tuning 🔧:
+
+Provide an option to fine-tune the model using the Trainer class for customization to specific tasks or datasets.
+Re-evaluation 🔍:
+
+Re-evaluate the model using the ROUGE metric to gauge enhanced performance post-augmentation.
+Results
+📊 Comprehensive evaluation results demonstrate the T5 model's proficiency in summarizing text across various metrics. Explore the notebook to understand the intricacies of text summarization and harness the power of the T5 model!
+
+Extractive Summarization with spaCy
+This project uses spaCy, a robust NLP library, to extract meaningful summaries by identifying and selecting the most important sentences from the original text.
+
+Key Steps
+Dependency Installation 🔧:
+
+Install necessary libraries, including spaCy and tabulate.
+Download the English language model for spaCy.
+Text Processing 🔄:
+
+Define and process the text to be summarized.
+Tokenize the text and calculate word frequencies.
+Sentence Scoring 📊:
+
+Score each sentence based on the frequencies of the words it contains.
+Summary Generation ✍️:
+
+Generate the extractive summary by selecting the top sentences.
+Result Formatting 🗂️:
+
+Format the summary and original text into a structured table using the tabulate library.
+Results
+📊 The project generates extractive summaries that capture the essence of the original text. The results are displayed in a structured table format for clarity. The summary model is saved as a pkl file for easy integration into web applications.
+
+
